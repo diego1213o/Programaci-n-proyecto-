@@ -1,0 +1,114 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Proyectoexamen",
+            "request": "launch",
+            "mainClass": "Proyectoexamen",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "juego",
+            "request": "launch",
+            "mainClass": "juego",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "DinoGame",
+            "request": "launch",
+            "mainClass": "DinoGame",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "buscaminas",
+            "request": "launch",
+            "mainClass": "buscaminas",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "ejercicionumeros",
+            "request": "launch",
+            "mainClass": "ejercicionumeros",
+            "classPaths": [
+                "${workspaceFolder}"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "jurgo",
+            "request": "launch",
+            "mainClass": "jurgo",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "JuegoSerpiente",
+            "request": "launch",
+            "mainClass": "JuegoSerpiente",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "JuegoAdivinanza",
+            "request": "launch",
+            "mainClass": "JuegoAdivinanza",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "prueba",
+            "request": "launch",
+            "mainClass": "prueba",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "matriz",
+            "request": "launch",
+            "mainClass": "matriz",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "publicnota3",
+            "request": "launch",
+            "mainClass": "publicnota3",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "pruebanota",
+            "request": "launch",
+            "mainClass": "pruebanota",
+            "projectName": "Hola mundo.java_e1da7db7"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
