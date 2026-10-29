@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-public class Proyectoexamen {
+public class proyectoexamen2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -41,4 +40,3 @@ public class Proyectoexamen {
         sc.close();
     }
 }
-
