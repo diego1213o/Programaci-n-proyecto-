@@ -1,42 +1,26 @@
+
 import java.util.Scanner;
 
 public class proyectoexamen2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int opcion;
+        do {
+            
+            System.out.println("El despertar del heroe");
+            System.out.println("1. Nueva partida");
+            System.out.println("2. Ranking");
+            System.out.println("3. Ayuda");
+            System.out.println("4. Salir");
+            System.out.print("Elige una opcion: ");
+            opcion = sc.nextInt();
+            sc.nextLine();
+            switch (opcion) {
+                case 1:
+         String nombreHeroe;
+            do {
+          System.out.print("Nombre del heroe: ");
+           nombreHeroe = sc.nextLine();
+          if (nombreHeroe.isEmpty()) System.out.println("El nombre no puede estar vacio");
+         } while (nombreHeroe.isEmpty());
 
-        System.out.println("El despertar del héroe");
-        System.out.println("1. Nueva partida");
-        System.out.println("2. Ranking");
-        System.out.println("3. Salir");
-        System.out.print("Elige una opcion: ");
-
-        int opcion = sc.nextInt();
-
-        switch (opcion) {
-            case 1:
-                System.out.println("Comienza la aventura");
-                System.out.println("Vida del heroe: 100");
-                System.out.println("Pociones: 3");
-                 System.out.print("Elige una opcion:");
-                 System.out.println("1. Atacar");
-                System.out.println("2. Beber pocion");
-
-                break;
-                
-
-            case 2:
-                System.out.println("Viendo el Ranking");
-                break;
-
-            case 3:
-                System.out.println("Saliendo del juego");
-                break;
-
-            default:
-                System.out.println("Opcion no valida");
-                break;
-        }
-
-        sc.close();
-    }
-}
