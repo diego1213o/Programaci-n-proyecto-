@@ -1,0 +1,7 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<DOCTYPE alumno SYSTEM "regalos.dtd">
+<alumno>
+    <nombre>lucia</nombre>
+    <edad>20</edad>
+</alumno>
+</DOCTYPE>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+	<equipo id="1">
+		<nombre>Equipo A</nombre>
+		<capitan>Laura</capitan>
+		<integrantes>
+			<integrante>Laura</integrante>
+			<integrante>Carlos</integrante>
+			<integrante>Maria</integrante>
+		</integrantes>
+	</equipo>
+
+	<equipo id="2">
+		<nombre>Equipo B</nombre>
+		<integrantes>
+			<integrante>Diego</integrante>
+			<integrante>Ana</integrante>
+			<integrante>Javier</integrante>
+		</integrantes>
+	</equipo>
+</equipos>  

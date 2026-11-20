@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<biblioteca> 
+  <libro categoria="programacion"> 
+    <titulo>Introduccion a XML</titulo> 
+    <autor>Maria López</autor> 
+    <anyo>2026</anyo> 
+  </libro> 
+  <libro categoria="web"> 
+    <titulo>HTML y CSS desde cero</titulo> 
+    <autor>David García</autor> 
+    <anyo>2025</anyo> 
+  </libro> 
+  <libro categoria="bases-datos"> 
+    <titulo>SQL practico</titulo> 
+    <autor>Ana Pérez</autor> 
+    <anyo>2024</anyo> 
+  </libro> 
+</biblioteca>
