@@ -24,6 +24,7 @@ public class proyectoexamen2 {
           if (nombreHeroe.isEmpty()) System.out.println("El nombre no puede estar vacio");
          } while (nombreHeroe.isEmpty());
 
+
         int vidaHeroe = 100, pocionesDisponibles = 3, puntuacion = 0, numeroEnemigo = 0;
          int[] pociones = {25, 25, 25};
         String[] enemigos = {"Antonio recio", "El Chrumbel","El Ranking"};
