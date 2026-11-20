@@ -1,0 +1,6 @@
+/**
+ * Document
+ */
+public enum Document {
+
+}

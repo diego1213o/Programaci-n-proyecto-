@@ -41,4 +41,117 @@ public class proyectoexamen2 {
           while (vidaHeroe > 0 && vidaEnemigos[numeroEnemigo] > 0 && !abandonar) {
            System.out.println("COMBATE");
              System.out.println("Heroe: " + nombreHeroe);
-             
+             System.out.println("Tu Vida: " + vidaHeroe);
+              System.out.println("Enemigo: " + enemigos[numeroEnemigo]);
+             System.out.println("Vida enemigo: " + vidaEnemigos[numeroEnemigo]);
+            System.out.println("1. Atacar");
+            System.out.println("2. Usar pocion");
+           System.out.println("3. Consultar inventario");
+         System.out.println("4. Abandonar partida");
+         System.out.print("Elige una opcion: ");
+         int opcionCombate = sc.nextInt();
+          boolean turnoValido = false;
+        switch (opcionCombate) {
+         case 1:
+             int danoHeroe = (int)(Math.random() * 11) + 10;
+              vidaEnemigos[numeroEnemigo] -= danoHeroe;
+            if (vidaEnemigos[numeroEnemigo] < 0) vidaEnemigos[numeroEnemigo] = 0;
+             System.out.println("Has atacado");
+             System.out.println("Dano causado: " + danoHeroe);
+           turnoValido = true;
+            break;
+             case 2:
+         if (pocionesDisponibles > 0) {
+         if (vidaHeroe < 100) {
+         int curacion = pociones[pocionesDisponibles - 1];
+         vidaHeroe += curacion;
+         if (vidaHeroe > 100) vidaHeroe = 100;
+        pocionesDisponibles--;
+        System.out.println("Has usado una pocion");
+        System.out.println("Vida actual: " + vidaHeroe);
+        System.out.println("Pociones restantes: " + pocionesDisponibles);
+        turnoValido = true;
+        } else System.out.println("Tienes la vida completa");
+        } else System.out.println("No tienes pociones");
+        break;
+        case 3:
+        System.out.println("Tu Inventario");
+        System.out.println("Pociones: " + pocionesDisponibles);
+         if (pocionesDisponibles > 0) {
+        for (int i = 0; i < pocionesDisponibles; i++)
+       System.out.println("Pocion " + (i + 1) + ": " + pociones[i] + " de vida");
+        } else System.out.println("No tienes pociones");
+         break; case 4:
+        System.out.println("Has abandonado la partida");
+        abandonar = true;
+        break;
+        default:
+        System.out.println("Opcion no valida");
+        break;
+                 }
+                  if (turnoValido && vidaEnemigos[numeroEnemigo] > 0) {
+                                int danoEnemigo = (int)(Math.random() * 11) + 5;
+                                vidaHeroe -= danoEnemigo;
+                                if (vidaHeroe < 0) vidaHeroe = 0;
+                                System.out.println("El enemigo te ha atacado");
+                                System.out.println("Dano recibido: " + danoEnemigo);
+                                System.out.println("Vida restante: " + vidaHeroe);
+                 }
+                        }
+                        if (vidaEnemigos[numeroEnemigo] == 0) {
+                            System.out.println("Has derrotado a " + enemigos[numeroEnemigo]);
+                            puntuacion += 100;
+                            System.out.println("Puntuacion: " + puntuacion);
+                        }
+                        numeroEnemigo++;
+    }
+
+                     System.out.println("Bien cabeza has ganado");
+                     if (vidaHeroe == 0) {
+                        System.out.println("GG pa el lobby");
+                    } else if (abandonar) {
+                        System.out.println("Has abandonado");
+                    } else if (numeroEnemigo == 3) {
+                        puntuacion += vidaHeroe;
+                        System.out.println("Has ganado");
+                        System.out.println("Vida restante: " + vidaHeroe);
+
+                        System.out.println("Quieres volver a jugar?");
+                        System.out.println("1. Si");
+                        System.out.println("2. No");
+                        System.out.print("Elige una opcion: ");
+                        otraPartida = sc.nextInt();
+
+                        if (otraPartida == 1) {
+                            abandonar = false;
+                        } else if (otraPartida == 2) {
+                            System.out.println("No");
+                            opcion = 4;
+                        }
+                    }
+                    System.out.println("Enemigos derrotados: " + (puntuacion / 100));
+                    System.out.println("Puntuacion final: " + puntuacion);
+                    break;
+                case 2:
+                    System.out.println("Viendo el Ranking");
+                    break;
+                case 3:
+                    System.out.println("AYUDA");
+            System.out.println("Derrota a los tres enemigos");
+                    System.out.println("Atacar causa entre 10 y 20 de dano");                    
+                System.out.println("Las pociones recuperan 25 de vida");
+                System.out.println("Puedes consultar el inventario");
+                System.out.println("Puedes abandonar la partida");
+                System.out.println("El Raking es una tortura de hacer");
+                break;
+            case 4:
+                    System.out.println("Saliendo del juego");
+                    break;
+                default:
+                    System.out.println("Opcion no valida");
+                    break;
+            }
+        } while (opcion != 4);
+        sc.close();
+    }
+}

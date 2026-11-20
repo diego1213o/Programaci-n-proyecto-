@@ -1,0 +1,15 @@
+
+# Archivos compilados de Java
+*.class
+
+# Carpetas de compilación
+bin/
+target/
+out/
+
+# Configuración local del IDE
+.vscode/
+.idea/
+
+# Archivos temporales
+*.log
