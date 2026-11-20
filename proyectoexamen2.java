@@ -129,11 +129,14 @@ public class proyectoexamen2 {
                             opcion = 4;
                         }
                     }
+                    if (!abandonar && (vidaHeroe == 0 || numeroEnemigo == 3)) {
+                        Ranking.guardarPuntuacion(nombreHeroe, puntuacion);
+                    }
                     System.out.println("Enemigos derrotados: " + (puntuacion / 100));
                     System.out.println("Puntuacion final: " + puntuacion);
                     break;
                 case 2:
-                    System.out.println("Viendo el Ranking");
+                    Ranking.mostrarRanking();
                     break;
                 case 3:
                     System.out.println("AYUDA");
